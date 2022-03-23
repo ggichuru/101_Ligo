@@ -29,3 +29,15 @@ let d : option(tez) = 5mutez - 1mutez /*Some (4mutez)*/
 
 let e : option(tez) = 1mutez - 5mutez /*None*/
 }
+
+## MULTIPLICATION
+
+You can multiply values of the same type
+You can also multiply nat and tez
+
+## DIVISION
+
+- You can divide int, nata nd tez
+- Division of two tez values results into a nat
+- LIGO also allows you to compute the remainder of the Euclidean division. In LIGO, it is a natural number
+- For cases when you need both the quotient and the remainder, LIGO provides the `ediv` operation. `ediv x y` returns `Some (quotient, remainder)`, unless y is zero, in which case it returns `None`
