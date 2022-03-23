@@ -42,8 +42,19 @@ You can also multiply nat and tez
 - LIGO also allows you to compute the remainder of the Euclidean division. In LIGO, it is a natural number
 - For cases when you need both the quotient and the remainder, LIGO provides the `ediv` operation. `ediv x y` returns `Some (quotient, remainder)`, unless y is zero, in which case it returns `None`
 
-
 ## CHECK IF `NAT`
 
 - Check if `nat` by using a predefined cast functin that accepts an `int` and returns an optional `nat`.
 - If the result is `None`, the provided integer was a natural number.
+
+## BITWISE OPERATIONS
+
+- Can be perfomed mostly with `nat`'s
+- Only in bitwise, the first operand can either be `int` or `nat`
+  
+- examples
+  - `land` : Bitwise and
+  - `lor` : Bitwise or
+  - `lxor`: Bitwise xor (exclusive or - is true if and only if its arguments diff)
+  - `lsl`: Bitwise shift left
+  - `lsr`: Bitwise shift right
