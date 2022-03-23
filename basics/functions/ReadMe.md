@@ -25,10 +25,10 @@
   - Using lambdas to be used as parameters to functions.
   - USE CASE => *having a list of integers and mapping the increment function to all its elements*
 
-        ```
+    ```
         let incr_map = (l : list (int)) : list (int) => 
-            List.map ((i: int) => i + 1, l);
-        ```
+            List.map ((i: int) => i + 1, l);       
+     ```
 
 ## NESTED FUNCTIONS
 
